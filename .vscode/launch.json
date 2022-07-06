@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-HeadFirstDesignPatternApplication<head-first-design-pattern>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.flexibledev.practice.headfirstdesignpattern.HeadFirstDesignPatternApplication",
+      "projectName": "head-first-design-pattern",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
