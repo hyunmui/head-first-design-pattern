@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.flexibledev.practice.headfirstdesignpattern.decorator.InputTest;
 import com.flexibledev.practice.headfirstdesignpattern.decorator.StarbuzzCoffee;
+import com.flexibledev.practice.headfirstdesignpattern.factory.PizzaTestDrive;
 import com.flexibledev.practice.headfirstdesignpattern.observer.WeatherStation;
 
 @SpringBootApplication
@@ -19,7 +20,8 @@ public class HeadFirstDesignPatternApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		// WeatherStation.run();
 		// StarbuzzCoffee.run();
-		InputTest.run();
+		// InputTest.run();
+		PizzaTestDrive.run();
 	}
 
 }
