@@ -2,22 +2,20 @@ package com.flexibledev.practice.headfirstdesignpattern.factory;
 
 import java.util.ArrayList;
 
-public class Pizza {
+import com.flexibledev.practice.headfirstdesignpattern.factory.ingredient.*;
+
+public abstract class Pizza {
 
     protected String name;
-    protected String dough;
-    protected String sauce;
-    protected ArrayList<String> toppings = new ArrayList<>();
 
-    public void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sauce...");
-        System.out.println("Adding toppings: ");
-        for (String topping : toppings) {
-            System.out.println("    " + topping);
-        }
-    }
+    protected Dough dough;
+    protected Sauce sauce;
+    protected Veggies veggies[];
+    protected Cheese cheese;
+    protected Pepperoni pepperoni;
+    protected Clams clam;
+
+    abstract public void prepare();
 
     public void bake() {
         System.out.println("Bake for 25 minuets at 350");
@@ -33,6 +31,10 @@ public class Pizza {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
 }
